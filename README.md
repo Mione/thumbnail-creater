@@ -1,1 +1,1 @@
-# thumbnail-creater
+# thumbnail-creator
