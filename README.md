@@ -1,1 +1,6 @@
-# thumbnail-creator
+# VIDEO THUMBNAIL CREATOR
+
+1. UPLOAD
+2. COPY
+3. 
+4. PROFIT
