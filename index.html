@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Video Thumbnail creator</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			background-color: #F2F2F2;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		#UploadArea {
+			background-color: white;
+			width: 970px;
+			margin: 0 auto;
+			padding: 50px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+			transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+		}
+		
+		.form-control {
+			background-image: none;
+			border: 1px solid #CECECE;
+			border-radius: 2px;
+			color: #555;
+			display: block;
+			font-size: 14px;
+			height: 34px;
+			line-height: 1.42857143;
+			padding: 6px 12px;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		}
+		
+		#NameBox {
+			width: 100%;
+		}
+		
+		.btn-default {
+			color: #333;
+			background-color: #fff;
+			border-color: #ccc;
+		}
+		
+		.btn-default:hover {
+			color: #333;
+			background-color: #e6e6e6;
+			border-color: #adadad;
+		}
+		
+		#FileBox {
+			width: 100%;
+			padding: 10px;
+			height: auto;
+		}
+		
+		#FileBox:hover {
+			background-color: #e6e6e6;
+			border-color: #adadad;
+			cursor: pointer;
+		}
+		
+		.btn {
+			display: inline-block;
+			padding: 6px 12px;
+			margin-bottom: 0;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px
+		}
+		
+		#UploadArea img {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="UploadBox">
+		<div id="UploadArea">
+			<h2>Video Thumbnail Creator</h2>
+			<label for="FileBox">Select File: </label> <br><input type="file" id="FileBox" class="form-control">
+			<br>
+			<label for="NameBox">File name: </label> <br><input type="text" id="NameBox" class="form-control">
+			<br>
+			<button type='button' id='UploadButton' class='Button btn btn-default'>Upload</button>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" charset="utf-8" src="main.fe.js"></script>
+</body>
+
+</html>
