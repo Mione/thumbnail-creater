@@ -17,6 +17,12 @@ function handler(request, response) {
 	var extname = path.extname(filePath);
 	var contentType = 'text/html';
 	switch (extname) {
+		case '.css':
+			contentType = 'text/css'
+			break;
+		case '.js':
+			contentType = 'text/javascript';
+			break;
 		case '.jpg':
 			contentType = 'image/jpeg';
 			break;
